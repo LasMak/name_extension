@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENS to Wallet Payment</title>
+</head>
+<body>
+  <h2>Resolve ENS or Wallet</h2>
+  <input id="ensInput" placeholder="Enter ENS (e.g., vitalik.eth) or Wallet Address">
+  <button id="resolveBtn">Resolve</button>
+  <p id="resolvedAddress"></p>
+
+  <h2>Create a Quote</h2>
+  <input id="fromCurrency" placeholder="From Currency (e.g., EUR)">
+  <input id="toCurrency" placeholder="To Currency (e.g., USDC_SOL)">
+  <input id="amount" type="number" placeholder="Enter amount in fromCurrency">
+  <button id="getQuoteBtn">Get Quote</button>
+  <p id="quoteResult"></p>
+
+  <h2>Make a Payment</h2>
+  <button id="payBtn" disabled>Pay with UNLIMIT</button>
+  <p id="paymentResult"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

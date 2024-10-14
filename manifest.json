@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ENS to UNLIMIT Payment",
+  "version": "1.0",
+  "description": "Resolve ENS names to wallet addresses and make payments via UNLIMIT.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ]
+}
